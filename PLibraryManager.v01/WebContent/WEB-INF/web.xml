@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>PLibraryManager.v01</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- 用户信息的操作处理-->
+  <servlet>
+    <servlet-name>user_info</servlet-name>
+    <servlet-class>cn.controller.CCheckUserinfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>user_info</servlet-name>
+    <url-pattern>/api/user_info</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 大类书信息的操作处理-->
+  <servlet>
+    <servlet-name>kind_info</servlet-name>
+    <servlet-class>cn.controller.CCheckKindinfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>kind_info</servlet-name>
+    <url-pattern>/api/kind_info</url-pattern>
+  </servlet-mapping>
+   <!-- 小类书信息的操作处理-->
+  <servlet>
+    <servlet-name>item_info</servlet-name>
+    <servlet-class>cn.controller.CCheckIteminfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>item_info</servlet-name>
+    <url-pattern>/api/item_info</url-pattern>
+  </servlet-mapping>
+ <!-- 借阅信息的操作处理-->
+  <servlet>
+    <servlet-name>borrow_info</servlet-name>
+    <servlet-class>cn.controller.CCheckBorrowinfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>borrow_info</servlet-name>
+    <url-pattern>/api/borrow_info</url-pattern>
+  </servlet-mapping>
+  <!-- 书目状态的操作处理-->
+  <servlet>
+    <servlet-name>state_info</servlet-name>
+    <servlet-class>cn.controller.CCheckStateinfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>state_info</servlet-name>
+    <url-pattern>/api/state_info</url-pattern>
+  </servlet-mapping>
+</web-app>
