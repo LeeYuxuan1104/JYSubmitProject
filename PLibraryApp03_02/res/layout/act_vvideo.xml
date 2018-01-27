@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lb"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_play"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/play" />
+
+        <Button
+            android:id="@+id/bt_pause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/pause" />
+
+        <Button
+            android:id="@+id/bt_stop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/stop" />
+
+        <Button
+            android:id="@+id/bt_replay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/restart" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lm"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_above="@id/lb"
+        android:layout_marginBottom="5sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginTop="5sp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:gravity="center"
+            android:text="0:00/0:00"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/sb_progress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_toRightOf="@id/tv_time" />
+    </RelativeLayout>
+
+    <SurfaceView
+        android:id="@+id/sv_video"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/lm"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:id="@+id/lt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/lm"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo03"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+</RelativeLayout>

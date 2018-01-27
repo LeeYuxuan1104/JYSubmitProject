@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <include
+        android:id="@+id/includeTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/act_topbar" />
+
+    <LinearLayout
+        android:id="@+id/layButtom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnUserinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/userinfo" />
+
+        <Button
+            android:id="@+id/btnKindinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/kindinfo" />
+
+        <Button
+            android:id="@+id/btnIteminfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/iteminfo" />
+
+        <Button
+            android:id="@+id/btnBorrowinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/borrowinfo" />
+
+        <Button
+            android:id="@+id/btnStateinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/stateinfo" />
+    </LinearLayout>
+   <include
+        android:id="@+id/includeMid"
+        android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+        android:layout_above="@id/layButtom"
+        android:layout_below="@id/includeTop"
+        layout="@layout/act_vvideo" />
+</RelativeLayout>

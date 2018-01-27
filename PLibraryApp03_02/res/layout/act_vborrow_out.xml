@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <include
+        android:id="@+id/includeTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/act_topbar" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/borrow" />
+
+    <LinearLayout
+        android:id="@+id/layMid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/codeiid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/code" />
+			<Button
+                android:id="@+id/searchiid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/codeiid"
+                android:text="@string/search" />
+            <EditText
+                android:id="@+id/etiid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/searchiid"
+                android:hint="@string/iid"
+                android:inputType="text" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/etresultbook"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:enabled="false"
+            android:hint="@string/iname"
+            android:inputType="text"
+            tools:ignore="Deprecated" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/codeuid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/code" />
+			<Button
+                android:id="@+id/searchuid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/codeuid"
+                android:text="@string/search" />
+            <EditText
+                android:id="@+id/etborrower"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/searchuid"
+                android:hint="@string/uid"
+                android:inputType="text" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/etresultborrower"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:enabled="false"
+            android:hint="@string/borrower"
+            android:inputType="text"
+            tools:ignore="Deprecated" />
+        <EditText 
+            android:id="@+id/etbtime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:hint="@string/btime"
+            />
+        <EditText 
+            android:id="@+id/etdeadline"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:hint="@string/deadline"
+            />
+        <EditText 
+            android:id="@+id/etbid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/bid"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

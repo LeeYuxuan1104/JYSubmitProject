@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/includeTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/act_topbar" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/add" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/btnAdd"
+        android:layout_below="@id/includeTop"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.model.tool.view.EditTextWithDel
+            android:id="@+id/etBid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:inputType="text"
+            android:hint="@string/bid"
+            android:singleLine="true" />
+
+        <com.model.tool.view.EditTextWithDel
+            android:id="@+id/etBname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:hint="@string/bname"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <com.model.tool.view.EditTextWithDel
+            android:id="@+id/etAuthor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:inputType="text"
+            android:hint="@string/author"
+            android:singleLine="true" />
+
+        <com.model.tool.view.EditTextWithDel
+            android:id="@+id/etPress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:hint="@string/press"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <com.model.tool.view.EditTextWithDel
+            android:id="@+id/etState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:inputType="text"
+            android:hint="@string/state"
+            android:singleLine="true" />
+
+        <com.model.tool.view.EditTextWithDel
+            android:id="@+id/etNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:inputType="text"
+            android:hint="@string/number"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</RelativeLayout>

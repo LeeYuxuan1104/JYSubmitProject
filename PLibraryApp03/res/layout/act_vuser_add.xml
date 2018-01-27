@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <include
+        android:id="@+id/includeTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/act_topbar" />
+	<Button
+        android:id="@+id/btnOk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/upload" />
+    <LinearLayout
+        android:id="@+id/layMid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2sp"
+        android:layout_marginRight="2sp"
+        android:layout_marginTop="2sp"
+        android:layout_marginBottom="2sp"
+        android:layout_below="@id/includeTop"
+        android:layout_above="@id/btnOk"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etuid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/uid"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etuname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/uname"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etupwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/upwd"
+            android:inputType="textPassword" />
+
+        <Spinner
+            android:id="@+id/sprole"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/array_roles"
+            android:prompt="@string/urole" />
+
+        <EditText
+            android:id="@+id/etnote"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/note"
+            android:lines="6" />
+        <EditText 
+            android:id="@+id/etphone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            />
+        <EditText 
+            android:id="@+id/etemail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            />
+        <Button 
+            android:id="@+id/ibimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/img"
+            />
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

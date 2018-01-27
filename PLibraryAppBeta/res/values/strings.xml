@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">图书管理</string>
+    <string name="action_settings">设置</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="wid">学号</string>
+    <string name="wpwd">密码</string>
+	
+    <string name="success">成功</string>
+    <string name="fail">失败</string>
+    <string name="nodata">无更新数据</string>
+    <string name="update">数据更新中</string>
+    <string name="ok">确认</string>
+    <string name="exit">退出</string>
+    <string name="back">Back</string>
+    <string name="bid">图书编号</string>
+    <string name="bname">图书名称</string>
+    <string name="author">图书作者</string>
+    <string name="press">出版社名</string>
+    <string name="state">状态类型</string>
+    <string name="number">同类序号</string>
+    
+    <string name="no">取消</string>
+    <string name="complete">请填充完整</string>
+    <string name="login">登&#160;&#160;录</string>
+    
+    <string name="search">搜索</string>
+    <string name="add">提交</string>
+    
+    <string name="wait">请等待..</string>
+    <string name="doing">进行操作中..</string>
+    
+    <string name="uppage">上一页</string>
+    <string name="downpage">下一页</string>
+   
+    <string name="tip_null"> </string>
+    <string name="resign">注册</string>
+	
+    <string name="iadd">+</string>
+    
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">图书管理通</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="play">播放</string>
+	<string name="pause">暂停</string>
+	<string name="gono">继续</string>
+	<string name="stop">停止</string>
+	<string name="restart">重播</string>
+    
+	<string name="pages">每页条数</string>
+    <string name="kinds">类别</string>
+    <string name="success">成功</string>
+    <string name="fail">失败</string>
+    <string name="nodata">无新数据</string>
+    <string name="update">数据更新</string>
+    <string name="ok">确定</string>
+    <string name="exit">退出</string>
+    <string name="back">返回</string>
+    <string name="delall">清空</string>
+    <string name="delitem">删除</string>
+    <string name="no">取消</string>
+    <string name="complete">请补充完整</string>
+    <string name="login">登&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;录</string>
+    <string name="resign">注&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;册</string>
+    <string name="search">搜索</string>
+    <string name="code">扫码</string>
+    <string name="detail">详情</string>
+    <string name="add">新增</string>
+    <string name="upload">上传</string>
+    <string name="borrow">借阅</string>
+    
+    <string name="wait">请等待</string>
+    <string name="doing">正在操作</string>
+    
+    <string name="uid">用户编号</string>
+    <string name="uname">用户姓名</string>
+    <string name="upwd">用户密码</string>
+    <string name="urole">用户类型</string>
+    <string name="phone">电话</string>
+    <string name="email">邮箱</string>
+    <string name="note">备注</string>
+    <string name="img">图片</string>
+    
+    <string name="userinfo">用户</string>
+    <string name="kindinfo">书类</string>
+    <string name="iteminfo">书目</string>
+    <string name="borrowinfo">借阅</string>
+    <string name="stateinfo">状态</string>
+     <string name="tip_null">为空</string>
+    <string name="menuinfo">主菜单</string>
+    <string name="uppage">上一页</string>
+    <string name="downpage">下一页</string>
+    <string name="scan_title">请圈进条形码/二维码</string>
+    <string name="kid">大类编号</string>
+    <string name="kname">大类名称</string>
+    <string name="borrower">借阅人</string>
+    <string name="btime">借阅时间</string>
+    <string name="deadline">借阅期限</string>
+    <string name="state">借阅状态</string>
+    <string name="outstate">借出状态</string>
+    <string name="instate">归还状态</string>
+    <string name="in">归还</string>
+    <string name="bid">借阅流水号</string>
+    <string name="iid">书目编号</string>
+    <string name="iname">书目名称</string>
+    <string name="author">作者名称</string>
+    <string name="press">出版社</string>
+    <string name="ptime">出版日期</string>
+    <string name="error">异常</string>
+    <string name="count">出版总数</string>
+    
+    <string name="photo">拍照</string>
+    <string name="choosetime">选择时间</string>
+    <string name="isnull">已空</string>
+    <string name="wel_name">实验室——图书管理</string>
+    
+</resources>

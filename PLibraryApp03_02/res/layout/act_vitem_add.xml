@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <include
+        android:id="@+id/includeTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/act_topbar" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/upload" />
+
+    <LinearLayout
+        android:id="@+id/layMid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnOk"
+        android:layout_below="@id/includeTop"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etiid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/iid" />
+
+        <EditText
+            android:id="@+id/etiname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/iname" />
+
+        <EditText
+            android:id="@+id/etnote"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/note" />
+
+        <EditText
+            android:id="@+id/etauthor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/author" />
+
+        <EditText
+            android:id="@+id/etpress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/press" />
+
+        <EditText
+            android:id="@+id/etptime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ptime" />
+
+        <EditText
+            android:id="@+id/etcount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/count"
+            android:inputType="number"
+             />
+
+        <Spinner
+            android:id="@+id/spkid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnimg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/photo" />
+    </LinearLayout>
+
+</RelativeLayout>
